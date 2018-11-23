@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item-divider color="light">
+    Informe os preços dos combustíveis:
+  </ion-item-divider>
+
+  <ion-item>
+    <ion-label color="primary" floating>Gasolina:</ion-label>
+    <ion-input [(ngModel)]="gasolina"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label color="sucess" floating>Etanol:</ion-label>
+      <ion-input [(ngModel)]="etanol"></ion-input>
+  </ion-item>
+
+  <button ion-button full (click)="calculoCombustivel()">Calcular</button>
+
+  <ion-item-divider color="light">
+    Resultado:
+    <ion-item>{{resultado}}</ion-item>
+    <ion-item>{{calculo}}</ion-item>
+  </ion-item-divider>
+
+</ion-content>
